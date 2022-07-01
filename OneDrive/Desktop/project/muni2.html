@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle> </tittle>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <centre> 
+        <form name="myform"  method= "post" onsubmit= " return vallidmail()"
+        action="muni1.html">
+        <div class="login-box">
+        <h1> LOGIN FORM</h1>
+        <div class="text-box">
+            <i class="fas fa-user-lock"></i>
+
+     <input type="text"  placeholder="user name" name="mail id"><br>
+    </div>
+    <div class="text-box">
+        <i class="fas fa-unlock-alt"></i>
+    <input type="Password"  placeholder="Password" name="password"><br>
+    </div>
+       <div class="btn">
+           <span> </span>
+      <input type="submit" value="LOGIN">
+       </div>
+    </div>
+        <div class="forgot">
+            <link rel="#"  href="forgot password">
+                </div>
+    </form>
+</centre>
+<script>
+    function vallidmail(){
+        var EMAIL=document.myform.email.value;
+        var PASSWORD=document.myform.password.value;
+      if(password.lenth<6){
+          alert( "password must contains 6 characters");
+          return false
+      }
+       
+    }
+</script>
+    </body>
+</html>

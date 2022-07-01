@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is the forms</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div class="muni">
+            <h1>LOGIN</h1>
+        <forms name="myform"  method="post"onsubmit=" return validpassword()" action="muni1.html">
+            
+           password: <input type="password" name=" pass1"s><br><br>
+           confirm password:<input type="password" name="pass2"><br><br>
+           <input type="submit" value="check"> 
+             </forms>
+             <script>
+                function validpassword(){
+                    var password=document.myform.pass1.value;
+                    var cpassword=document.myform.pass2.value;
+                    if(password.length<6){
+                        alert("password must contain 6 characters");
+                        return false
+                    }
+                }
+             </script>
+        </div>
+    </body>
+</html>
